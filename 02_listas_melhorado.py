@@ -18,7 +18,14 @@ print(soma1)
 #faça uma função que recebe uma lista de números e retorna a média.
 #ou seja, soma todos os números e divide pela quantidade de numeros
 def media(lista):
-    return 12
+    soma_list = 0
+    for e in lista:
+        soma_list = soma_list + e
+    media = soma_list/len(lista)
+    return media
+
+media1 = media([100,200,300])
+print(media1)
 
 #faça uma função que acrescenta o proximo numero a uma lista.
 #por exemplo cresce([7,8]) deve devolver [7,8,9]
